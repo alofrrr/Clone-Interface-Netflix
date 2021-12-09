@@ -1,16 +1,15 @@
+/* eslint-disable default-case */
+/* eslint-disable no-unused-vars */
 const API_KEY = '329789b1ed3ff6580b3808dbd153231b';
 const API_BASE = 'https://api.themoviedb.org/3';
 
-
-/*
-- originais Netflix
+/*- originais Netflix
 - recomendados (trending)
 - em alta (top rated)
 - ação
 - comédia
 - documentários
-- aventura
-*/
+- aventura*/
 
 const basicFetch = async (endpoint) => {
     const req = await fetch(`${API_BASE}${endpoint}`);
@@ -65,5 +64,23 @@ export default {
 
             },
         ];
-    }
+    },
+     getMovieInfo: async (movieId, type) => {
+        let info = {};
+
+        if (movieId){
+            switch(type){
+                case 'movie':
+                    info = await basicFetch(`/movie/${movieId}?language=pt-BR&api_key=${API_KEY}`);
+                    break;
+                    case 'tv':
+                        info = await basicFetch(`/tv/${movieId}?language=pt-BR&api_key=${API_KEY}`);
+                    break;
+                    default:
+                        info = null;
+                        break;
+            }
+        }
+        return info;
+     }
 }
