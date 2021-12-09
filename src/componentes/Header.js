@@ -12,7 +12,7 @@ export default ({black}) => {
             </div>
             <div className="header--user">
                 
-            <a href="/">
+            <a href="https://github.com/alofrrr" target="_blank">
                     <img src="https://avatars.githubusercontent.com/u/80932554?v=4" alt="Nalaura"></img>
                 </a>
    

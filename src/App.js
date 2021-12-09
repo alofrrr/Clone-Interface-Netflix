@@ -63,11 +63,12 @@ export default () => {
 
           <footer>
             Direitos de Imagem para Netflix <br/>
-            Dados retirados do site Themoviedb.org
+            Dados retirados do site Themoviedb.org <br/>
+            Desenvolvido por Ana Laura Oliveira com base no conteúdo disponibilizado pela B7Web.
           </footer>
 {movieList.length <= 0 &&
           <div className="loading">
-            <img src="https://partnerhelp.netflixstudios.com/hc/article_attachments/4404389437843/ident_178.gif"></img>
+            <img src="https://media.filmelier.com/noticias/br/2020/03/Netflix_LoadTime.gif" height="250" width="500"></img>
           </div>}
     </div>
   )
