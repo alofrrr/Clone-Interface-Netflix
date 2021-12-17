@@ -38,9 +38,9 @@ npm start
 
 ## 🎁 Expressões de gratidão
 
-* Conte a outras pessoas sobre este projeto 📢
+* Contar a outras pessoas sobre este projeto 📢
 * Me chamar pra um estágio 👩‍💻
 * Obrigado publicamente 🤓
 
 ---
-Feito com <3 por [Nalaura](https://www.linkedin.com/in/ana-laura-oliveira-ferreira-a70b69174/)
+Feito com <3 por [Nalaura](https://www.linkedin.com/in/analauraoliveiraferreira/)
